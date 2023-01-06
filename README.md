@@ -32,6 +32,12 @@
 $ npm install
 ```
 
+## Create Docker container
+
+```bash
+docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+```
+
 ## Running the app
 
 ```bash
