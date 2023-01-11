@@ -7,7 +7,7 @@ import { Task } from './task.entity';
 
 @Injectable()
 export class TasksRepository extends Repository<Task> {
-  constructor(private dataSource: DataSource) {
+  constructor(dataSource: DataSource) {
     super(Task, dataSource.createEntityManager());
   }
 
